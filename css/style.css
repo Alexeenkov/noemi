@@ -348,7 +348,7 @@ ul {
 .button__search {
     flex-shrink: 0;
     width: 50px;
-    background-image: url("/svg/search.svg");
+    background-image: url("svg/search.svg");
     background-repeat: no-repeat;
     background-size: 18px auto;
     background-position: center center;
