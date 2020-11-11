@@ -82,7 +82,7 @@ ul {
     right: 3.4%;
 }
 
-.logo {
+.logo-svg {
     position: relative;
     z-index: 1;
     margin-bottom: 8.11%;
@@ -307,6 +307,15 @@ ul {
     line-height: 1.286;
 }
 
+.post-new__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-new__link:hover {
+    color: #b59f5b;
+}
+
 
 /* -------------------------------search-form---------------------------- */
 
@@ -451,7 +460,7 @@ ul {
 .product-content {
     position: relative;
     transform: translateY(-13.5%);
-    padding: 13.94% 6.67% 7.88% 5.455%;
+    padding: 16% 6.67% 7.88% 5.455%;
 }
 
 .product-content::before {
@@ -470,6 +479,8 @@ ul {
 }
 
 .text-link {
+    position: relative;
+    z-index: 3;
     text-decoration: none;
     color: #b59f5b;
 }
@@ -486,6 +497,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 7%;
 }
 
 .price__old {
@@ -500,6 +512,8 @@ ul {
 }
 
 .button__shop {
+    position: relative;
+    z-index: 3;
     display: block;
     padding-top: 15px;
     width: 140px;
