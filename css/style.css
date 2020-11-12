@@ -726,6 +726,7 @@
             flex-wrap: wrap;
         }
         .trend-post {
+            margin-bottom: 3px;
             width: 49.805%;
         }
         .trend-post:nth-child(2n+1) {
