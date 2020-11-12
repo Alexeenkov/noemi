@@ -260,19 +260,19 @@
     }
     
     .trend__garden {
-        background-image: url("/images/trend1.jpg");
+        background-image: url("../images/trend1.jpg");
     }
     
     .trend__cheeze {
-        background-image: url("/images/trend2.jpg");
+        background-image: url("../images/trend2.jpg");
     }
     
     .trend__mountain {
-        background-image: url("/images/trend3.jpg");
+        background-image: url("../images/trend3.jpg");
     }
     
     .trend__limon {
-        background-image: url("/images/trend4.jpg");
+        background-image: url("../images/trend4.jpg");
     }
     
     .tags-post {
