@@ -15,7 +15,7 @@
                 <span></span>
             </div>
             <div class="header-box">
-                <a href="#0" class="logo" alt="Логотип NOEMI">
+                <a href="#popup" class="logo" alt="Логотип NOEMI">
                     <img src="svg/noemi-logo.svg" class="logo__image" alt="Логотип NOEMI">
                 </a>
                 <nav class="header__menu">
@@ -489,6 +489,50 @@
             <a href="#0" class="copyrights-link" alt="Copyright">Copyright © 2009–2019 City Blog LLC.</a>
         </div>
     </footer>
+    <aside class="popup" id="popup">
+        <a href="#0" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#0" class="popup__close">
+                    <img src="svg/form-x.svg" alt="Крестик - закрывает форму (модальное окно) при нажатии" class="popap__close-x">
+                </a>
+                <h4 class="aside-title">Ваш фидбек</h4>
+                <form class="popup__form">
+                    <div class="popup__form-group">
+                        <label>
+							<span>Как часто Вы заходите на сайт?</span>
+							<select name="How-often-visits" class="popup__select popup__select_indent">
+								<option value="Almost-every-day" selected>Почти каждый день</option>
+								<option value="Every-few-days">Раз в несколько дней</option>
+								<option value="Every-few-weeks">Раз в несколько недель</option>
+								<option value="Several-times-a-year">Несколько раз в год</option>
+							</select>
+						</label>
+                    </div>
+                    <div class="popup__form-group">
+                        <span>Вы подписаны на e-mail рассылку?</span>
+                        <div class="radio-group__container">
+                            <label class="popup__radio-group">
+								<input type="radio" name="popup__radio-group" class="radio-group__mailing">
+								<span class="radio-group__text">Да</span>
+							</label>
+                            <label class="popup__radio-group">
+								<input type="radio" name="popup__radio-group" class="radio-group__mailing">
+								<span class="radio-group__text">Нет</span>
+							</label>
+                        </div>
+                    </div>
+                    <div class="popup__form-group">
+                        <label>	
+							<span>Расскажите, какой контент Вы хотели бы видеть на нашем сайте?</span>
+							<textarea class="popup__textarea" name="What-see" placeholder="Может, больше рецептов?"></textarea>
+						</label>
+                    </div>
+                    <button type="button" class="button button__popup">КНОПКА</button>
+                </form>
+            </div>
+        </div>
+    </aside>
     <script src="JS/script.js"></script>
 </body>
 
