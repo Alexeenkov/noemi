@@ -84,7 +84,6 @@
     /* --------------------------trend------------------------- */
     
     .aside-title {
-        font-size: 16px;
         text-transform: uppercase;
         text-align: center;
     }
@@ -243,10 +242,6 @@
     .post-new {
         display: flex;
         width: 100%;
-    }
-    
-    .posts-new .aside-title {
-        margin: 0;
     }
     
     .post-new__image {
@@ -527,7 +522,7 @@
         z-index: 999;
         top: 0;
         left: 0;
-        padding: 55px 15px 35px 15px;
+        padding: 33px 15px;
         width: 100%;
         min-width: 320px;
         height: 100%;
@@ -566,8 +561,7 @@
     
     .popup__content {
         position: relative;
-        padding: 30px 25px;
-        max-width: 330px;
+        max-width: 390px;
         background-color: #ffffff;
         transition: all 0.8s ease 0s;
         opacity: 0;
@@ -583,10 +577,6 @@
         position: absolute;
         right: 0;
         top: -32px;
-    }
-    
-    .popap__close-x {
-        width: 28px;
     }
     
     .popup__form {
@@ -672,6 +662,7 @@
     /*!===========================!!! mobile + tablet !!!================================ */
     
     @media (max-width: 1200px) {
+        /* -----------------------------burger-menu--------------------------- */
         body.lock {
             overflow: hidden;
         }
@@ -754,6 +745,7 @@
             flex-direction: column;
             justify-content: space-evenly;
         }
+        /* -----------------------------main--------------------------- */
         .post {
             flex-direction: column;
         }
@@ -761,13 +753,19 @@
             width: 100%;
             margin-bottom: 13px;
         }
+        /* -------------------------------sidebar---------------------------- */
         .post-new__image {
             width: 19%;
+        }
+        /* -------------------------------popup---------------------------- */
+        .popap__close-x {
+            width: 28px;
         }
     }
     /*! ==============================!!! mobile !!!=============================*/
     
     @media (max-width: 640px) {
+        /* -------------------------------header---------------------------- */
         .header {
             display: flex;
             flex-direction: column;
@@ -788,6 +786,7 @@
             font-size: 26px;
             line-height: 1.385;
         }
+        /* -------------------------------trend---------------------------- */
         .aside-title {
             margin-top: 40px;
             font-size: 16px;
@@ -801,6 +800,7 @@
         .trend-content {
             padding: 8% 7.5% 8% 7.5%;
         }
+        /* -------------------------------main---------------------------- */
         .wrapper_indent {
             padding-left: 15px;
             padding-right: 15px;
@@ -817,19 +817,26 @@
         .post-text {
             font-size: 14px;
         }
+        /* -------------------------------sidebar---------------------------- */
         .post-new:nth-child(n+2) {
             margin-top: 6.1%;
         }
+        /* -------------------------------our-products---------------------------- */
         .product {
             margin-bottom: 5.55%;
         }
         .product-content {
             transform: translateY(-13%);
         }
+        /* -------------------------------footer---------------------------- */
         .footer {
             padding-bottom: 45px;
             padding-left: 15px;
             padding-right: 15px;
+        }
+        /* -------------------------------popup---------------------------- */
+        .popup__content {
+            padding: 30px 25px;
         }
     }
     /*! ==============================!!! tablet !!!============================= */
@@ -939,6 +946,9 @@
             margin-left: 5%;
             width: 38.8%;
         }
+        .posts-new .aside-title {
+            margin: 0;
+        }
         .post-new:nth-child(n+2) {
             margin-top: 8.15%;
         }
@@ -975,6 +985,13 @@
             padding-bottom: 35px;
             padding-left: 35px;
             padding-right: 35px;
+        }
+        /* -------------------------------popup---------------------------- */
+        .popup__content {
+            padding: 50px 30px;
+        }
+        .popup__content .aside-title {
+            font-size: 18px;
         }
     }
     /*! =============================!!! desktop !!!============================= */
@@ -1103,6 +1120,9 @@
         .sidebar {
             width: 22.583%;
         }
+        .posts-new .aside-title {
+            margin: 0;
+        }
         .post-new:nth-child(n+2) {
             margin-top: 8.15%;
         }
@@ -1142,5 +1162,15 @@
             padding-bottom: 43px;
             padding-left: 15px;
             padding-right: 15px;
+        }
+        /* -------------------------------popup---------------------------- */
+        .popup__content {
+            padding: 50px 30px;
+        }
+        .popup__content .aside-title {
+            font-size: 20px;
+        }
+        .popap__close-x {
+            width: 20px;
         }
     }
