@@ -577,6 +577,16 @@
         position: absolute;
         right: 0;
         top: -32px;
+        background-image: url("../svg/form-x.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: unset;
+        cursor: pointer;
+    }
+    
+    .popup__close:focus {
+        outline: none;
     }
     
     .popup__form {
@@ -613,6 +623,10 @@
     
     .popup__radio-group {
         margin-right: 30px;
+    }
+    
+    .popup__radio-group:last-child {
+        margin-right: 0;
     }
     
     .radio-group__mailing {
@@ -758,8 +772,9 @@
             width: 19%;
         }
         /* -------------------------------popup---------------------------- */
-        .popap__close-x {
+        .popup__close_size {
             width: 28px;
+            height: 28px;
         }
     }
     /*! ==============================!!! mobile !!!=============================*/
@@ -1170,7 +1185,8 @@
         .popup__content .aside-title {
             font-size: 20px;
         }
-        .popap__close-x {
+        .popup__close_size {
             width: 20px;
+            height: 20px;
         }
     }
